@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ButtonModule } from 'primeng/button';
+import { SharedModule } from './shared/shared.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ButtonModule],
-  templateUrl: './app.component.html'
+  imports: [CommonModule, RouterOutlet, SharedModule],
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   title = 'spoty';
